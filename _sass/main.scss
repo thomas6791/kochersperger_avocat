@@ -1,6 +1,29 @@
+$yellow: #E5C25E;
+$pink: #E55E81;
+$green: #50E3C2;
+$black: #344151;
+
 .current {
   color: green;
 }
-body {
-  background-color: green;
+html {
+  scroll-behavior: smooth;
+  font-family: 'Avenir';
+  font-size: 1em;
 }
+body {
+  //background-color: $yellow;
+  margin: 0px;
+  padding: 0px;
+}
+article {
+  //max-width: 1024px;
+}
+#skills {
+  //width: 100%;
+  background-color: $black;
+  height: 50vh;
+  color: white;
+  p {}
+}
+.size-default, h1, h2, footer, nav { max-width: 1024px; margin: auto; width: 1024px; }
