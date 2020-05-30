@@ -24,7 +24,25 @@ article {
   background-color: $black;
   height: 50vh;
   color: white;
+  padding: 20px 0px;
   p {}
 }
 .size-default, h1, h2, footer, nav { max-width: 1024px; margin: auto; width: 1024px; }
 h2 { font-weight: normal; }
+.colmar {
+  //border: solid 1px;
+  padding: 100px 0px;
+  div {
+    background-color: $yellow;
+    width: 50%;
+    height: 250px;
+    position: relative;
+    img {
+      height: 250px;
+      width: auto;
+      position: absolute;
+      right: -50px;
+      top: 50px;
+    }
+  }
+}
