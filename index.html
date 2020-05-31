@@ -4,14 +4,15 @@ title: Home
 my_number: 5
 ---
 <h1>{{ "Hello World! fg" | downcase }}</h1>
-<p class="size-default accroche">Marie Kochersperger, <strong>avocat à Colmar</strong>, dans les domaines du Droit du travail et social; le Droit de la famille, des personnes et de leur patrimoine; les procédures civiles et le Droit pénal général.</p>
-<section class=" size-default colmar">
+<div class="size-default marie">
+  <p class="accroche">Marie Kochersperger, <strong>avocat à Colmar</strong>, dans les domaines du Droit du travail et social; le Droit de la famille, des personnes et de leur patrimoine; les procédures civiles et le Droit pénal général.</p>
+  <div>
+    <img src="/assets/images/marie.jpg"/>
+  </div>
+</div>
+<section class="size-default colmar">
   <div>
     <img src="https://www.visit.alsace/wp-content/uploads/2019/01/thio-petite-venise-colmar-istock-sergey-dzyuba-1600x900.jpg" alt="ville de colmar avocat">
-  </div>
-
-  <div class="marie">
-    <img src="/assets/images/marie.jpg"/>
   </div>
 </section>
 {% include skills.html %}

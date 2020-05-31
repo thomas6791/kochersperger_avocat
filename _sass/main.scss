@@ -47,8 +47,21 @@ h2 { font-weight: normal; }
   }
 }
 .marie {
-  width: 30% !important;
-  background-color: $red !important;
+  display: flex;
+  justify-content: space-between;
+  .accroche { width: 500px; }
+  div {
+    background-color: $red !important;
+    min-width: 250px;
+    height: 250px;
+    position: relative;
+    img {
+      height: 250px;
+      position: absolute;
+      right: 30px;
+      bottom: -25px;
+    }
+  }
 }
 .accroche {
   font-family: 'Caveat', cursive;
