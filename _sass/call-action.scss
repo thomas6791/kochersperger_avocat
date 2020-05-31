@@ -1,11 +1,13 @@
-main {
+body {
   position: relative;
   #call-action {
     border: solid 1px;
     position: absolute;
     right: 0;
     top: 0;
-    transform: scale(1) rotate(-90deg);
+    //transform: scale(1) rotate(-90deg);
+    transform-origin: 0 0;
+    transform: rotate(90deg);
     background-color: $yellow;
   }
 }
