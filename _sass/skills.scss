@@ -24,6 +24,10 @@
   &.left {}
   &.right {
     flex-direction: row-reverse;
-    img { height: 300px; }
+    background: no-repeat url("../images/ladies-justice-b-1-min.jpg");
+    background-position: right bottom 45%;
+    img {
+      height: 300px;
+    }
   }
 }
