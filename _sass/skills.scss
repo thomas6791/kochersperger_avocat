@@ -24,5 +24,6 @@
   &.left {}
   &.right {
     flex-direction: row-reverse;
+    img { height: 300px; }
   }
 }
