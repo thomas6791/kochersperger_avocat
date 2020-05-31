@@ -30,6 +30,8 @@ h2 { font-weight: normal; }
 .colmar {
   //border: solid 1px;
   padding: 100px 0px;
+  display: flex;
+  justify-content: space-between;
   div {
     background-color: $yellow;
     width: 50%;
@@ -43,6 +45,10 @@ h2 { font-weight: normal; }
       top: 50px;
     }
   }
+}
+.marie {
+  width: 30% !important;
+  background-color: $red !important;
 }
 .accroche {
   font-family: 'Caveat', cursive;
