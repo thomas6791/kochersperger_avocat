@@ -1,0 +1,28 @@
+#skills {
+  //width: 100%;
+  background-color: $black;
+  //height: 50vh;
+  color: white;
+  padding: 20px 0px;
+  p {}
+}
+.grid-skills {
+  display: flex;
+}
+.skill {
+  border: solid 1px white;
+  display: flex;
+  img {
+    display: block;
+    height: 220px;
+    margin: 0px;
+  }
+  .text {
+    h3 {}
+    p {}
+  }
+  &.left {}
+  &.right {
+    flex-direction: row-reverse;
+  }
+}
