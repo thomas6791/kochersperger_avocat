@@ -24,6 +24,8 @@
     }
   }
 }
+#nav { visibility: visible; }
+.header { visibility: hidden; height: 0; }
 
 .window .header {
   position: absolute;
