@@ -4,6 +4,11 @@
   text-decoration: none;
   border-radius: 5px;
   padding: 5px 20px;
+  &:hover {
+    color: $black;
+    border: solid 1px;
+    background-color: white;
+  }
 }
 
 button.fancy {
