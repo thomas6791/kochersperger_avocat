@@ -23,6 +23,7 @@
 @media only screen { } /* Define mobile styles - Mobile First */
 
 @media only screen and (max-width: 40em) {
+  main { padding-top: 50px; }
   .size-default {}
   .grid-skills {
     display: block;
@@ -64,8 +65,8 @@
     justify-content: center;
   }
   #skills {
-    padding: 30px 15px;
-    h2 { text-align: center; }
+    padding: 10px 15px 70px 15px;
+    h2 { text-align: center; line-height: 5em; }
   }
   .skill {
     width: 100%; max-width: 100%; display: inherit;

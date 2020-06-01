@@ -32,7 +32,7 @@
   left: 0;
   height: 50px;
   width: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: $black;
   overflow: hidden;
   -webkit-transition: all 0.5s ease-out, background 1s ease-out;
   transition: all 0.5s ease-out, background 1s ease-out;
@@ -159,7 +159,7 @@
   display: block;
   position: relative;
   color: #FFF;
-  font-family: "Ek Mukta", sans-serif;
+  font-family: "Avenir", sans-serif;
   font-weight: 100;
   text-decoration: none;
   font-size: 22px;
