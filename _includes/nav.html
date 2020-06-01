@@ -1,11 +1,13 @@
 <nav id="nav">
+  <ul>
   {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" {% if page.url == item.link %}style="color: red;"{% endif %}>
+    <li><a href="{{ item.link }}" {% if page.url == item.link %}style="color: red;"{% endif %}>
       {{ item.name }}
-    </a>
+    </a></li>
   {% endfor %}
-  <a href="#">Accueil</a>
-  <a href="#">Compétences</a>
-  <a href="#">Marie K.</a>
-  <a href="#">Contact | 03...</a>
+  <li><a href="#">Accueil</a></li>
+  <li><a href="#">Compétences</a></li>
+  <li><a href="#">Marie K.</a></li>
+  <li><a href="#">Contact | 03...</a></li>
+</ul>
 </nav>
