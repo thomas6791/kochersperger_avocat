@@ -37,9 +37,16 @@ article {
 h2 { font-weight: normal; }
 .colmar {
   //border: solid 1px;
-  padding: 100px 0px;
+  padding-bottom: 100px;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  .back {
+    position: absolute;
+    opacity: 0.1;
+    bottom: 0px;
+    right: 0px;
+  }
   div {
     background-color: $yellow;
     width: 50%;
@@ -57,6 +64,15 @@ h2 { font-weight: normal; }
 .marie {
   display: flex;
   justify-content: space-between;
+  //background: no-repeat url("../images/K-black-min.png");
+  //background-position: left bottom;
+  padding-bottom: 100px;
+  position: relative;
+  .back {
+    position: absolute;
+    opacity: 0.1;
+    bottom: -70px;
+  }
   .accroche {
     max-width: 500px; width: 100%;
   }
@@ -82,7 +98,7 @@ h2 { font-weight: normal; }
   box-sizing: border-box;
   strong { font-weight: normal; }
   &.second {
-    background-color: white;
+    background-color: transparent;
     font-size: 1.8em;
     width: 40%;
     display: flex;
