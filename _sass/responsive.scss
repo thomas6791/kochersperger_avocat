@@ -63,6 +63,18 @@
     max-width: 100%;
     justify-content: center;
   }
+  #skills {
+    padding: 30px 15px;
+    h2 { text-align: center; }
+  }
+  .skill {
+    width: 100%; max-width: 100%; display: inherit;
+    h3 { clear: both; }
+    //img { height: 250px; width: auto; padding: 10px; }
+    .text { padding: 0px;
+      img { width: auto; height: 200px; display: block; margin: auto; margin: 10px; }
+    }
+  }
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
 /* Medium screens - TABLET */

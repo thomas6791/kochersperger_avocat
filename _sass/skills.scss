@@ -11,25 +11,25 @@
 }
 .skill {
   //border: solid 1px white;
-  display: flex;
   max-width: 50%;
+  h3 {}
   img {
-    display: block;
     height: 220px;
     margin: 0px;
   }
   .text {
     padding: 0px 20px;
-    h3 {}
     p {}
   }
-  &.left {}
+  &.left {
+    img { float: left; }
+  }
   &.right {
-    flex-direction: row-reverse;
     //background: no-repeat url("../images/ladies-justice-b-1-min.jpg");
-    background-position: right bottom 45%;
+    //background-position: right bottom 45%;
     img {
       height: 300px;
+      float: right;
     }
   }
 }
