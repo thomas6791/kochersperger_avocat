@@ -11,9 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Poiret+One&display=swap" rel="stylesheet">
     {% seo %}
   </head>
-  <body>
-    <header>
-      {% include nav.html %}
+  <body class="window">
+    <header class="header">
+      {% include mobile-nav.html %}
     </header>
     <main>
       <article>
@@ -23,3 +23,4 @@
     {% include footer.html %}
   </body>
 </html>
+<script src="{{ base.url | prepend: site.url }}/assets/js/mobile.js"></script>
