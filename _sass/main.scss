@@ -35,14 +35,14 @@ h2 { font-weight: normal; }
   div {
     background-color: $yellow;
     width: 50%;
-    height: 250px;
+    height: 300px;
     position: relative;
     img {
-      height: 250px;
+      height: 300px;
       width: auto;
       position: absolute;
       right: -50px;
-      top: 50px;
+      top: 25px;
     }
   }
 }
