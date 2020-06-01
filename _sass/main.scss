@@ -26,6 +26,14 @@ article {
   //max-width: 1024px;
 }
 .size-default, h1, h2, footer, nav { max-width: 1024px; margin: auto; width: 100%; }
+.banner {
+  img {
+    margin: auto;
+    object-fit: cover;
+    height: 50vh;
+    width: 100%;
+  }
+}
 h2 { font-weight: normal; }
 .colmar {
   //border: solid 1px;
