@@ -41,6 +41,19 @@
       right: 20px;
       bottom: 0px;
     }
+    div {
+      position: relative;
+      .logo-marie {
+        visibility: visible;
+        width: 120px;
+        height: auto;
+        position: absolute;
+        bottom: 35%;
+        left: 20px;
+        right:10;
+        //margin: auto;
+      }
+    }
   }
   .accroche {
     width: 100%;
@@ -77,6 +90,12 @@
     .text { padding: 0px;
       img { width: auto; height: 200px; display: block; margin: auto; margin: 10px; }
     }
+  }
+  footer {
+    padding: 30px 15px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
   }
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 

@@ -25,7 +25,7 @@ body {
 article {
   //max-width: 1024px;
 }
-.size-default, h1, h2, footer { max-width: 1024px; margin: auto; width: 100%; }
+.size-default, h1, h2 { max-width: 1024px; margin: auto; width: 100%; }
 .banner {
   img {
     margin: auto;
@@ -68,6 +68,7 @@ h2 { font-weight: normal; }
   //background-position: left bottom;
   padding-bottom: 100px;
   position: relative;
+  .logo-marie { visibility: hidden; }
   .back {
     position: absolute;
     opacity: 0.1;
