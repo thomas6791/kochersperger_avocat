@@ -1,14 +1,17 @@
-<form id="contact-form" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/YOUR_EMAIL_HERE" method="post">
-  <fieldset id="fs-frm-inputs">
-    <label for="full-name">Nom & Prénom</label>
-    <input type="text" name="name" id="full-name" placeholder="" required="">
-    <label for="email-address">Email</label>
-    <input type="email" name="_replyto" id="email-address" placeholder="" required="">
-    <label for="telephone">Telephone (Option)</label>
-    <input type="telephone" name="telephone" id="telephone" placeholder="+33XXXXXXXXX">
-    <label for="complaint">Message</label>
-    <textarea rows="6" name="complaint" id="complaint" placeholder="Votre message" required=""></textarea>
-    <input type="hidden" name="_subject" id="email-subject" value="Complaint Form Submission">
-  </fieldset>
-  <input type="submit" value="Envoyer" class="btn black">
-</form>
+<section id="contact-form">
+  <div>ferge</div>
+  <form id="fs-frm" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/YOUR_EMAIL_HERE" method="post">
+    <fieldset id="fs-frm-inputs">
+      <label for="full-name">Nom & Prénom</label>
+      <input type="text" name="name" id="full-name" placeholder="" required="">
+      <label for="email-address">Email</label>
+      <input type="email" name="_replyto" id="email-address" placeholder="" required="">
+      <label for="telephone">Telephone (Option)</label>
+      <input type="telephone" name="telephone" id="telephone" placeholder="+33XXXXXXXXX">
+      <label for="complaint">Message</label>
+      <textarea rows="6" name="complaint" id="complaint" placeholder="Votre message" required=""></textarea>
+      <input type="hidden" name="_subject" id="email-subject" value="Complaint Form Submission">
+    </fieldset>
+    <input type="submit" value="Envoyer" class="btn black">
+  </form>
+</section>
