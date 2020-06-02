@@ -1,15 +1,18 @@
 #contact {
-  background-color: $yellow;
+  //background-color: $yellow;
   width: 100%;
   margin: auto;
   display: flex;
   font-size: 1.2em;
   justify-content: space-between;
   min-height: 50vh;
+  div { width: 100%; border: solid 1px; }
   #fs-frm {
-    max-width: 1024px;
-    margin: auto;
     padding: 30px;
+    width: 100%;
+    input, label, textarea { width: 100%; font-size: 1em; font-family: "Avenir"; }
+    label { font-weight: bold; }
+    input, textarea { margin-bottom: 10px; }
     #fs-frm-inputs {
     border: none;
     padding: 0px;
