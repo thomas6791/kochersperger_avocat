@@ -4,10 +4,14 @@
   text-decoration: none;
   border-radius: 5px;
   padding: 5px 20px;
-  &:hover {
+  cursor: pointer;
+  &:hover, &.black {
     color: $black;
     border: solid 1px;
     background-color: white;
+  }
+  &.black:hover {
+    background-color: $black; color: white;
   }
 }
 
