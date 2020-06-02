@@ -1,6 +1,10 @@
 <nav id="nav">
   <ul>
-    <li><a href="{{site.url}}"><img src="{{site.url}}/assets/images/logo-MK-white-min.png" class="logo"></a></li>
+    {% if page.url == "/" %}
+      <li><h1><a href="{{site.url}}"><img src="{{site.url}}/assets/images/logo-MK-white-min.png" class="logo" alt="Marie Kochersperger | Avocat à Colmar, Alsace, avocate"></a></h1></li>
+    {% else %}
+    <li><a href="{{site.url}}"><img src="{{site.url}}/assets/images/logo-MK-white-min.png" class="logo" alt="logo marie kochersperger avocat colmar"></a></li>
+    {% endif %}
     <li><a href="{{site.url}}/about.html">Compétences</a></li>
     <li><a href="#">Honoraires</a></li>
     <li><a href="#contact">Contact | 03 89 20 62 80</a></li>
