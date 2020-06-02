@@ -5,6 +5,16 @@
       <h3>Marie Kochersperger Avocat</h3>
       <p>2 Boulevard du Général Leclerc <br>68000 COLMAR</p>
       <a href="tel:+33389206280">03 89 20 62 80</a>
+      <h3 class="horaires">Horaires</h3>
+      <ul>
+        <li>Lundi: <time>8:00</time>-<time>12:00</time> | <time>14:00</time>-<time>18:00</time></li>
+        <li>Mardi: <time>8:00</time>-<time>12:00</time> | <time>14:00</time>-<time>18:00</time></li>
+        <li>Mercredi: <time>8:00</time>-<time>12:00</time> | <time>14:00</time>-<time>17:30</time></li>
+        <li>Jeudi: <time>8:00</time>-<time>12:00</time> | <time>14:00</time>-<time>18:00</time></li>
+        <li>Vendredi: <time>8:00</time>-<time>12:00</time> | <time>14:00</time>-<time>17:00</time></li>
+        <li>Samedi: Fermé</li>
+        <li>Dimanche: Fermé</li>
+      </ul>
     </div>
     <form id="fs-frm" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/YOUR_EMAIL_HERE" method="post" class="">
       <fieldset id="fs-frm-inputs">
@@ -13,7 +23,7 @@
         <label for="email-address">Email*</label>
         <input type="email" name="_replyto" id="email-address" placeholder="" required="">
         <label for="telephone">Telephone (option)</label>
-        <input type="telephone" name="telephone" id="telephone" placeholder="+33XXXXXXXXX">
+        <input type="telephone" name="telephone" id="telephone" placeholder="">
         <label for="complaint">Message</label>
         <textarea rows="6" name="complaint" id="complaint" placeholder="Votre message" required=""></textarea>
         <input type="hidden" name="_subject" id="email-subject" value="Complaint Form Submission">
