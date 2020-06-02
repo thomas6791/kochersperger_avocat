@@ -43,7 +43,7 @@
     }
     div {
       position: relative;
-      .logo-marie {
+      .logo-marie > img, h2 {
         visibility: visible;
         width: 120px;
         height: auto;
@@ -54,12 +54,17 @@
         opacity: 0.9;
         //margin: auto;
       }
+      .logo-marie > h2 {
+        width: auto;
+        bottom: 20%;
+        color: white;
+      }
     }
   }
   .accroche {
     width: 100%;
     //padding: 0px 10px;
-    font-size: 1.2em;
+    font-size: 1.5em;
     padding: 15px;
   }
   .colmar {
@@ -90,6 +95,20 @@
     //img { height: 250px; width: auto; padding: 10px; }
     .text { padding: 0px;
       img { width: auto; height: 200px; display: block; margin: auto; margin: 10px; }
+    }
+  }
+  #contact {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    & > div { flex-direction: column; }
+    #fs-frm {
+      -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+      -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+      box-sizing: border-box;
+    }
+    .shadow {
+      box-shadow: none;
     }
   }
   footer {

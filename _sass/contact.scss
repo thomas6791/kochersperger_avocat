@@ -1,8 +1,9 @@
 #contact {
   //background-color: $yellow;
+  h2 { text-align: center; line-height: 3.5em; }
+  a { text-decoration: none; color: black; }
   width: 100%;
   margin: auto;
-  display: flex;
   font-size: 1.2em;
   justify-content: space-between;
   min-height: 50vh;
@@ -11,16 +12,34 @@
   box-sizing: border-box;
   div { width: 100%; }
   #fs-frm {
+    -webkit-appearance: none;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
     padding: 30px;
     width: 100%;
     input, label, textarea { width: 100%; font-size: 1em; font-family: "Avenir"; }
     label { font-weight: bold; }
     input, textarea { margin-bottom: 10px; }
     #fs-frm-inputs {
-    border: none;
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
+      border: none;
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+    }
+
   }
+  & > div { display: flex; }
+  #coordinates { padding: 30px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    //margin: 0px 15px;
+  }
+  input[type=submit] { line-height: 2.5em; }
+  .wrapper, .orange {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
   }
 }
