@@ -110,4 +110,7 @@ h2 { font-weight: normal; }
     }
   }
 }
-.mapxbox { display: block; width: 100%; margin: auto; max-height: 50vh; object-fit: cover;}
+.mapxbox {
+  display: block; width: 100%; margin: auto; max-height: 50vh; object-fit: cover;
+}
+.map-links { display: none; }
