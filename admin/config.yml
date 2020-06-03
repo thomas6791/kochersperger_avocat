@@ -4,7 +4,7 @@ backend:
   name: github
   repo:  thomas6791/kochersperger_avocat
   branch: master # Branch to update (optional; defaults to master)
-media_folder: 'assets/uploads'
+media_folder: "assets/images"
 collections:
   - name: 'blog'
     label: 'Blog'
