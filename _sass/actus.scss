@@ -1,13 +1,17 @@
 #actus {
   padding: 70px 0px;
-  h2 {}
+  h2 { font-family: 'Kalam', cursive; line-height: 2em; }
   div:nth-child(2) {
     border: solid 1px;
     display: flex;
     justify-content: space-between;
   }
+  .size-default {}
 }
 .articles {
+  min-width: 60%;
+  min-height: 15em;
+  margin: 0px;
   //border: solid 1px;
   list-style: none;
   padding: 0px;
