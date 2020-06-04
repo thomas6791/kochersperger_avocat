@@ -97,7 +97,15 @@
       img { width: auto; height: 200px; display: block; margin: auto; margin: 10px; }
     }
   }
-  #actus {}
+  #actus {
+    padding: 15px !important;
+    h2 { text-align: center; }
+    .articles {
+      display: flex;
+      flex-direction: column;
+      min-height: auto;
+    }
+  }
   #contact {
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */

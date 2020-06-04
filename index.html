@@ -28,14 +28,15 @@ my_number: 5
 {% include skills.html %}
 <section id="actus">
   <div class="size-default">
-    <h2>Les dernières actualités du Blog</h2>
-    <ul class="articles">
-    {% for post in site.posts %}
-      <a href="{{ post.url }}" class="shadow">
-        <li><h3>{{ post.title }}</h3></li>
-      </a>
-    {% endfor %}
-    </ul>
+      <h2>Les dernières actualités dans le Droit</h2>
+      <ul class="articles">
+      {% for post in site.posts %}
+        <a href="{{ post.url }}" class="shadow">
+          <li><h3>{{ post.title }}</h3></li>
+        </a>
+      {% endfor %}
+      </ul>
+      <p>Lire les autres articles</p>
   </div>
 </section>
 <div>
