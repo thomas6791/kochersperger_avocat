@@ -26,6 +26,21 @@ my_number: 5
   </div>
 </section>
 {% include skills.html %}
+<section id="actus">
+  <div class="size-default">
+    <h2>Les dernières actualités dans le Droit</h2>
+    <div>
+      <p>Retrouvez les dernières actualités issues du Blog sur les différentes évolutions du code civil, pénal,...</p>
+    </div>
+    <ul class="articles">
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+</section>
 <div>
   <img width="" src="https://api.mapbox.com/styles/v1/mapbox/outdoors-v11/static/pin-l-suitcase+e76571(7.3542266,48.0737333)/7.3542266,48.0737333,14,0,60/600x300@2x?access_token=pk.eyJ1IjoidGhvbWFzLTY3IiwiYSI6ImNrN3hwZXpmMzBiZHozbm9za2ViMzIyMjgifQ.V_IVmR22KK45nQKxA7h61w" alt="Mapbox Map of 7.3542266,48.0737333" class="mapxbox">
   <p class="map-links">
