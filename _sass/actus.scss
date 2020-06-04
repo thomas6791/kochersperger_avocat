@@ -1,15 +1,21 @@
 #actus {
   padding: 70px 0px;
+  h2 {}
   div:nth-child(2) {
-    border: solid;
+    border: solid 1px;
     display: flex;
     justify-content: space-between;
   }
 }
 .articles {
-  border: solid 1px;
+  //border: solid 1px;
   list-style: none;
   padding: 0px;
-  display: flex;
-  a { border: solid 1px red; width: 33%; }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+
+  //justify-content: space-between;
+  a { text-decoration: none; color: black; }
+  h3 { text-align: center; font-weight: lighter; }
 }

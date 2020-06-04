@@ -33,7 +33,7 @@ my_number: 5
       <p>Retrouvez les dernières actualités issues du Blog sur les différentes évolutions du code civil, pénal,...</p>
       <ul class="articles">
       {% for post in site.posts %}
-        <a href="{{ post.url }}">
+        <a href="{{ post.url }}" class="shadow">
           <li><h3>{{ post.title }}</h3></li>
         </a>
       {% endfor %}
