@@ -19,17 +19,22 @@
     </div>
     <form name="contact" method="POST" data-netlify="true">
       <p>
-        <label>Nom & Prénom: <input type="text" name="name" required="required" /></label>
+        <label>Nom & Prénom*: <input type="text" name="name" required="required" /></label>
       </p>
       <p>
-        <label>Email: <input type="email" name="email" required="required" /></label>
+        <label>Email*: <input type="email" name="email" required="required" /></label>
       </p>
       <p>
         <label>Telephone (option): <input type="telephone" name="telephone" /></label>
       </p>
       <p>
-        <label>Message: <textarea name="message" rows="6" placeholder="votre message" required="required"></textarea></label>
+        <label>Message*: <textarea name="message" rows="6" placeholder="votre message" required="required"></textarea></label>
       </p>
+      <p class="rgpd">
+        <label>J'accepte que mes coordonnées soient transmises dans le cadre de ma demande</label>
+        <input type="checkbox" required name="terms">
+      </p>
+      <div data-netlify-recaptcha="true"></div>
 
       <button type="submit" class="btn">Envoyer</button>
 
