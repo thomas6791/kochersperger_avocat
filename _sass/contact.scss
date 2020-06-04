@@ -11,23 +11,17 @@
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   box-sizing: border-box;
   div { width: 100%; }
-  #fs-frm {
+  form {
     -webkit-appearance: none;
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box;
     padding: 30px;
     width: 100%;
-    input, label, textarea { width: 100%; font-size: 1em; font-family: "Avenir"; }
+    input, label, textarea, button { width: 100%; font-size: 1em; font-family: "Avenir"; }
     label { font-weight: bold; }
     input, textarea { margin-bottom: 10px; }
-    #fs-frm-inputs {
-      border: none;
-      padding: 0px;
-      display: flex;
-      flex-direction: column;
-    }
-
+    p { margin: 0px; }
   }
   .flex { display: flex; }
   #coordinates { padding: 30px;
@@ -41,7 +35,8 @@
     .horaires { text-decoration: underline; }
     //margin: 0px 15px;
   }
-  input[type=submit] { line-height: 2.5em; }
+  button { line-height: 2.5em; width: 100%; background-color: $black; color: white; }
+  button:hover { opacity: 0.8; }
   .wrapper, .orange {
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */

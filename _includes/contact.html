@@ -17,19 +17,22 @@
         <li>Dimanche: Fermé</li>
       </ul>
     </div>
-    <form id="fs-frm" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/YOUR_EMAIL_HERE" method="post" class="">
-      <fieldset id="fs-frm-inputs">
-        <label for="full-name">Nom & Prénom*</label>
-        <input type="text" name="name" id="full-name" placeholder="" required="">
-        <label for="email-address">Email*</label>
-        <input type="email" name="_replyto" id="email-address" placeholder="" required="">
-        <label for="telephone">Telephone (option)</label>
-        <input type="telephone" name="telephone" id="telephone" placeholder="">
-        <label for="complaint">Message</label>
-        <textarea rows="6" name="complaint" id="complaint" placeholder="Votre message" required=""></textarea>
-        <input type="hidden" name="_subject" id="email-subject" value="Complaint Form Submission">
-      </fieldset>
-      <input type="submit" value="Envoyer" class="btn black">
+    <form name="contact" method="POST" data-netlify="true">
+      <p>
+        <label>Nom & Prénom: <input type="text" name="name" required="required" /></label>
+      </p>
+      <p>
+        <label>Email: <input type="email" name="email" required="required" /></label>
+      </p>
+      <p>
+        <label>Telephone (option): <input type="telephone" name="telephone" /></label>
+      </p>
+      <p>
+        <label>Message: <textarea name="message" rows="6" placeholder="votre message" required="required"></textarea></label>
+      </p>
+
+      <button type="submit" class="btn">Envoyer</button>
+
     </form>
   </div>
 </section>
