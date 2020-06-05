@@ -28,28 +28,31 @@ my_number: 5
 {% include skills.html %}
 <section id="actus">
   <div class="size-default">
-      <h2>Les dernières actualités dans le Droit</h2>
+      <h2>Les dernières actualités du Blog</h2>
       <ul class="articles">
-        <a href="{{ site.posts[0].url }}" class="">
+        <a href="{{ site.posts[0].url }}" class="card">
           <li>
             <h3>{{ site.posts[0].title }}</h3>
+            <p>{{ site.posts[0].preview  | truncate: 100 }}</p>
             <img src="{{site.url}}/assets/images/card1.jpg" alt="">
           </li>
         </a>
-        <a href="{{ site.posts[1].url }}" class="">
+        <a href="{{ site.posts[1].url }}" class="card">
           <li>
             <h3>{{ site.posts[1].title }}</h3>
+            <p>{{ site.posts[1].preview  | truncate: 100 }}</p>
             <img src="{{site.url}}/assets/images/card2.jpg" alt="">
           </li>
         </a>
-        <a href="{{ site.posts[2].url }}" class="">
+        <a href="{{ site.posts[2].url }}" class="card">
           <li>
             <h3>{{ site.posts[2].title }}</h3>
+            <p>{{ site.posts[2].preview  | truncate: 100 }}</p>
             <img src="{{site.url}}/assets/images/card3.jpg" alt="">
           </li>
         </a>
       </ul>
-      <p>Lire les autres articles</p>
+      <a href="{{ site.url}}/blog" class="btn">Voir les autres articles</a>
   </div>
 </section>
 <div>
