@@ -13,6 +13,10 @@
   &.black:hover {
     background-color: $black; color: white;
   }
+  &.black {
+    color: $black;
+    border: solid 1px $black;
+  }
 }
 
 button.fancy {
