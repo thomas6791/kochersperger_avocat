@@ -38,7 +38,7 @@ my_number: 5
             <img src="{{site.url}}/assets/images/card1.jpg" alt="symbole de la justice">
           </li>
         </a>
-        <a href="{{ site.posts[1].url }}" class="card">
+        <a href="{{ site.posts[1].url }}" class="card active">
           <li>
             <h3>{{ post[1].title }}</h3>
             <p>{{ post[1].preview  | truncate: 100 }}</p>
@@ -63,3 +63,4 @@ my_number: 5
   </p>
 </div>
 {%  include contact.html %}
+<script src="{{ base.url | prepend: site.url }}/assets/js/card.js"></script>
