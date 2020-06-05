@@ -30,24 +30,25 @@ my_number: 5
   <div class="size-default">
       <h2>Les dernières actualités du Blog</h2>
       <ul class="articles">
+        {% assign post = site.posts %}
         <a href="{{ site.posts[0].url }}" class="card">
           <li>
-            <h3>{{ site.posts[0].title }}</h3>
-            <p>{{ site.posts[0].preview  | truncate: 100 }}</p>
+            <h3>{{ post[0].title }}</h3>
+            <p>{{ post[0].preview  | truncate: 100 }}</p>
             <img src="{{site.url}}/assets/images/card1.jpg" alt="">
           </li>
         </a>
         <a href="{{ site.posts[1].url }}" class="card">
           <li>
-            <h3>{{ site.posts[1].title }}</h3>
-            <p>{{ site.posts[1].preview  | truncate: 100 }}</p>
+            <h3>{{ post[1].title }}</h3>
+            <p>{{ post[1].preview  | truncate: 100 }}</p>
             <img src="{{site.url}}/assets/images/card2.jpg" alt="">
           </li>
         </a>
         <a href="{{ site.posts[2].url }}" class="card">
           <li>
-            <h3>{{ site.posts[2].title }}</h3>
-            <p>{{ site.posts[2].preview  | truncate: 100 }}</p>
+            <h3>{{ post[2].title }}</h3>
+            <p>{{ post[2].preview  | truncate: 100 }}</p>
             <img src="{{site.url}}/assets/images/card3.jpg" alt="">
           </li>
         </a>
