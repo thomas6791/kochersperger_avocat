@@ -105,7 +105,12 @@
       flex-direction: column;
       min-height: auto;
     }
-    .articles { img { opacity: 1; } }
+    .articles {
+      a {
+        p { position: absolute; z-index: 2;}
+      }
+      img { opacity: 1; }
+    }
   }
   #contact {
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
