@@ -30,11 +30,24 @@ my_number: 5
   <div class="size-default">
       <h2>Les dernières actualités dans le Droit</h2>
       <ul class="articles">
-      {% for post in site.posts %}
-        <a href="{{ post.url }}" class="shadow">
-          <li><h3>{{ post.title }}</h3></li>
+        <a href="{{ site.posts[0].url }}" class="">
+          <li>
+            <h3>{{ site.posts[0].title }}</h3>
+            <img src="{{site.url}}/assets/images/card1.jpg" alt="">
+          </li>
         </a>
-      {% endfor %}
+        <a href="{{ site.posts[1].url }}" class="">
+          <li>
+            <h3>{{ site.posts[1].title }}</h3>
+            <img src="{{site.url}}/assets/images/card2.jpg" alt="">
+          </li>
+        </a>
+        <a href="{{ site.posts[2].url }}" class="">
+          <li>
+            <h3>{{ site.posts[2].title }}</h3>
+            <img src="{{site.url}}/assets/images/card3.jpg" alt="">
+          </li>
+        </a>
       </ul>
       <p>Lire les autres articles</p>
   </div>
