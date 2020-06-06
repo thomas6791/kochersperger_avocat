@@ -1,0 +1,12 @@
+home:  "Accueil"
+    more: "En savoir plus"
+    contact:
+        title: "Contact"
+        name: "Nom & Prénom"
+        email: "Email"
+        tel: "Telephone (option)"
+        message: "Message"
+        holder_message: "Votre message"
+        consent: "J'accepte que mes coordonnées soient transmises dans le cadre de ma demande"
+        send: "Envoyer"
+        hours: "Horaires"
