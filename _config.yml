@@ -66,12 +66,12 @@ t:
         title: "Contact"
         name: "First & Last Name"
         email: "Email"
-        tel: "Telephone (option)"
+        tel: "Telephone (optional)"
         message: "Message"
-        holder_message: "Votre message"
-        consent: "J'accepte que mes coordonnées soient transmises dans le cadre de ma demande"
-        send: "Envoyer"
-        hours: "Horaires"
+        holder_message: "Your message"
+        consent: "I agree that my contact details may be passed on as part of my application"
+        send: "Send"
+        hours: "Timetable"
     menu:
         skills: ""
   de:
@@ -81,12 +81,12 @@ t:
         title: "Kontakt"
         name: "Vorname und Nachname"
         email: "E-Mail"
-        tel: "Telephone (option)"
-        message: "Message"
-        holder_message: "Votre message"
-        consent: "J'accepte que mes coordonnées soient transmises dans le cadre de ma demande"
-        send: "Envoyer"
-        hours: "Horaires"
+        tel: "Telefon (Option)"
+        message: "Nachricht"
+        holder_message: "Ihre Nachricht"
+        consent: "Ich bin damit einverstanden, dass meine Kontaktdaten als Teil meiner Bewerbung weitergeleitet werden."
+        send: "Senden Sie"
+        hours: "Zeitplan"
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
