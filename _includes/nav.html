@@ -6,7 +6,31 @@
     <li><a href="{{site.url}}"><img src="{{site.url}}/assets/images/logo-MK-white-min.png" class="logo" alt="logo marie kochersperger avocat colmar"></a></li>
     {% endif %}
     <li><a href="{{site.url}}/about.html">Compétences</a></li>
+    <p>{{ site.active_lang }}</p>
+    <h2>{{site.url}}</h2>
     <li><a href="#">Honoraires</a></li>
+    <li><a href="../blog">Blog</a></li>
+    <li><a href="{{site.url}}/{{site.active_lang}}/blog">Blog 2</a></li>
+    <div>
+      <li><a href="{{ site.url/de }}/de">DE</a></li><span>|</span>
+      <li><a href="{{ site.url/fr }}/">FR</a></li>
+    </div>
+    <li><a href="#contact">Contact | 03 89 20 62 80</a></li>
+  </ul>
+</nav>
+
+<nav id="nav">
+  <ul>
+    {% if page.url == "/" %}
+      <li><h1><a href="{{site.url}}"><img src="{{site.url}}/assets/images/logo-MK-white-min.png" class="logo" alt="Marie Kochersperger | Avocat à Colmar, Alsace, avocate"></a></h1></li>
+    {% else %}
+    <li><a href="{{site.url}}"><img src="{{site.url}}/assets/images/logo-MK-white-min.png" class="logo" alt="logo marie kochersperger avocat colmar"></a></li>
+    {% endif %}
+    <li><a href="{{site.url}}/about.html">Compétences</a></li>
+    <p>{{ site.active_lang }}</p>
+    <li><a href="#">Honoraires</a></li>
+    <li><a href="../blog">Blog</a></li>
+    <li><a href="{{site.url}}/{{site.active_lang}}/blog">Blog 2</a></li>
     <div>
       <li><a href="{{ site.url/de }}/de">DE</a></li><span>|</span>
       <li><a href="{{ site.url/fr }}/">FR</a></li>
