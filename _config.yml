@@ -32,6 +32,14 @@ github_username:  jekyll
 # Build settings
 theme: minima
 
+languages: ["fr", "en", "de"]
+default_lang: "fr"
+exclude_from_localization: ["javascript", "images", "css", "README.md"]
+parallel_localization: true
+
+sass:
+    sourcemap: never
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
