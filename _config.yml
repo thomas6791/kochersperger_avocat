@@ -49,6 +49,7 @@ t:
   fr:
     home:  "Accueil"
     more: "En savoir plus"
+    contact_us: "Me contacter"
     contact:
         title: "Contact"
         name: "Nom & Prénom"
@@ -62,6 +63,7 @@ t:
   en:
     home:  "Home"
     more: "Read More"
+    contact_us: "Contact me"
     contact:
         title: "Contact"
         name: "First & Last Name"
@@ -77,6 +79,7 @@ t:
   de:
     home:  "Startseite"
     more: "Erfahren Sie mehr"
+    contact_us: "Kontakt"
     contact:
         title: "Kontakt"
         name: "Vorname und Nachname"
