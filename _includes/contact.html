@@ -6,15 +6,15 @@
       <p>2 Boulevard du Général Leclerc <br>68000 COLMAR</p>
       <a href="tel:+33389206280">03 89 20 62 80</a>
       <a href="https://www.linkedin.com/in/marie-kochersperger-161905a2/?originalSubdomain=fr" target="_blank"><img src="{{site.url}}/assets/images/linkedin-icon.png" class="social" /></a>
-      <h3 class="horaires">{{ site.t.[site.active_lang].contact.hours }}</h3>
+      <h3 class="horaires">{{ site.t.[site.active_lang].contact.hours.title }}</h3>
       <ul>
-        <li>Lundi: <time datetime="8:00">8:00</time>-<time datetime="12:00">12:00</time> | <time datetime="14:00">14:00</time>-<time datetime="18:00">18:00</time></li>
-        <li>Mardi: <time datetime="8:00">8:00</time>-<time datetime="12:00">12:00</time> | <time datetime="14:00">14:00</time>-<time datetime="18:00">18:00</time></li>
-        <li>Mercredi: <time datetime="8:00">8:00</time>-<time datetime="12:00">12:00</time> | <time datetime="14:00">14:00</time>-<time datetime="17:30">17:30</time></li>
-        <li>Jeudi: <time datetime="8:00">8:00</time>-<time datetime="12:00">12:00</time> | <time datetime="14:00">14:00</time>-<time datetime="18:00">18:00</time></li>
-        <li>Vendredi: <time datetime="8:00">8:00</time>-<time datetime="12:00">12:00</time> | <time datetime="14:00">14:00</time>-<time datetime="17:00">17:00</time></li>
-        <li>Samedi: Fermé</li>
-        <li>Dimanche: Fermé</li>
+        <li>{{ site.t.[site.active_lang].contact.hours.lundi }}: <time datetime="8:00">8:00</time>-<time datetime="12:00">12:00</time> | <time datetime="14:00">14:00</time>-<time datetime="18:00">18:00</time></li>
+        <li>{{ site.t.[site.active_lang].contact.hours.mardi }}: <time datetime="8:00">8:00</time>-<time datetime="12:00">12:00</time> | <time datetime="14:00">14:00</time>-<time datetime="18:00">18:00</time></li>
+        <li>{{ site.t.[site.active_lang].contact.hours.mercredi }}: <time datetime="8:00">8:00</time>-<time datetime="12:00">12:00</time> | <time datetime="14:00">14:00</time>-<time datetime="17:30">17:30</time></li>
+        <li>{{ site.t.[site.active_lang].contact.hours.jeudi }}: <time datetime="8:00">8:00</time>-<time datetime="12:00">12:00</time> | <time datetime="14:00">14:00</time>-<time datetime="18:00">18:00</time></li>
+        <li>{{ site.t.[site.active_lang].contact.hours.vendredi }}: <time datetime="8:00">8:00</time>-<time datetime="12:00">12:00</time> | <time datetime="14:00">14:00</time>-<time datetime="17:00">17:00</time></li>
+        <li>{{ site.t.[site.active_lang].contact.hours.samedi }}: {{ site.t.[site.active_lang].contact.hours.close }}</li>
+        <li>{{ site.t.[site.active_lang].contact.hours.dimanche }}: {{ site.t.[site.active_lang].contact.hours.close }}</li>
       </ul>
     </div>
     <form name="contact" method="POST" data-netlify="true">
