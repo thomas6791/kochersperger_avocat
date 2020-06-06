@@ -45,6 +45,48 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
+t:
+  fr:
+    home:  "Accueil"
+    more: "En savoir plus"
+    contact:
+        title: "Contact"
+        name: "Nom & Prénom"
+        email: "Email"
+        tel: "Telephone (option)"
+        message: "Message"
+        holder_message: "Votre message"
+        consent: "J'accepte que mes coordonnées soient transmises dans le cadre de ma demande"
+        send: "Envoyer"
+        hours: "Horaires"
+  en:
+    home:  "Home"
+    more: "Read More"
+    contact:
+        title: "Contact"
+        name: "First & Last Name"
+        email: "Email"
+        tel: "Telephone (option)"
+        message: "Message"
+        holder_message: "Votre message"
+        consent: "J'accepte que mes coordonnées soient transmises dans le cadre de ma demande"
+        send: "Envoyer"
+        hours: "Horaires"
+    menu:
+        skills: ""
+  de:
+    home:  "Startseite"
+    more: "Erfahren Sie mehr"
+    contact:
+        title: "Kontakt"
+        name: "Vorname und Nachname"
+        email: "E-Mail"
+        tel: "Telephone (option)"
+        message: "Message"
+        holder_message: "Votre message"
+        consent: "J'accepte que mes coordonnées soient transmises dans le cadre de ma demande"
+        send: "Envoyer"
+        hours: "Horaires"
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
