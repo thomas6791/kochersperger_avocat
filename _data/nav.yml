@@ -1,15 +1,13 @@
-- name: Home
-  link: /
-- name: About
-  link: /about.html
 
 fr:
   - name: Accueil
     link: /
+  - name: About
+    link: /about.html
   - name: Blog
     link: /blog.html
 de:
-  - name: Accueil
+  - name: Home
     link: /
-  - name: Blog
+  - name: BlogDE
     link: /blog.html

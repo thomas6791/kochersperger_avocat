@@ -15,3 +15,31 @@
     <li><a href="#contact">Contact | 03 89 20 62 80</a></li>
   </ul>
 </nav>
+
+<nav id="nav">
+  <ul>
+    {% if page.url == "/" %}
+      <li><h1><a href="{{site.url}}"><img src="{{site.url}}/assets/images/logo-MK-white-min.png" class="logo" alt="Marie Kochersperger | Avocat à Colmar, Alsace, avocate"></a></h1></li>
+    {% else %}
+      <li><a href="{{site.url}}"><img src="{{site.url}}/assets/images/logo-MK-white-min.png" class="logo" alt="logo marie kochersperger avocat colmar"></a></li>
+    {% endif %}
+    <li><a href="{{site.url}}/about.html">Compétences</a></li>
+    <li><a href="#">Honoraires</a></li>
+    <li><a href="{{site.url}}/{{site.active_lang}}/blog">Blog</a></li>
+    <div>
+      <li><a href="{{ site.url }}/de">DE</a></li><span>|</span>
+      <li><a href="{{ site.url }}">FR</a></li>
+    </div>
+    <li><a href="#contact">Contact | 03 89 20 62 80</a></li>
+  </ul>
+</nav>
+
+<nav>
+  {% for item in site.data.nav.[site.active_lang] %}
+    <a href="{{ item.link }}">
+      {{ item.name }}
+    </a>
+  {% endfor %}
+</nav>
+
+<h1>{{ site.active_lang }}</h1>
