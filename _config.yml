@@ -32,11 +32,102 @@ github_username:  jekyll
 # Build settings
 theme: minima
 
+languages: ["fr", "en", "de"]
+default_lang: "fr"
+exclude_from_localization: ["javascript", "images", "css", "README.md"]
+parallel_localization: true
+
+sass:
+    sourcemap: never
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
 
+t:
+  fr:
+    home:  "Accueil"
+    menu:
+        skills: "Compétences"
+    more: "En savoir plus"
+    contact_us: "Me contacter"
+    contact:
+        title: "Contact"
+        name: "Nom & Prénom"
+        email: "Email"
+        tel: "Telephone (option)"
+        message: "Message"
+        holder_message: "Votre message"
+        consent: "J'accepte que mes coordonnées soient transmises dans le cadre de ma demande"
+        send: "Envoyer"
+        hours:
+          title: "Horaires"
+          lundi: "Lundi"
+          mardi: "Mardi"
+          mercredi: "Mercredi"
+          jeudi: "Jeudi"
+          vendredi: "Vendredi"
+          samedi: "Samedi"
+          dimanche: "Dimanche"
+          close: "Fermé"
+
+    skills:
+        title: "Compétences & champs d'intervention"
+
+  en:
+    home:  "Home"
+    more: "Read More"
+    contact_us: "Contact me"
+    contact:
+        title: "Contact"
+        name: "First & Last Name"
+        email: "Email"
+        tel: "Telephone (optional)"
+        message: "Message"
+        holder_message: "Your message"
+        consent: "I agree that my contact details may be passed on as part of my application"
+        send: "Send"
+        hours:
+          title: "Timetable"
+          lundi: "Monday"
+          mardi: "Tuesday"
+          mercredi: "Wednesday"
+          jeudi: "Thursday"
+          vendredi: "Friday"
+          samedi: "Saturday"
+          dimanche: "Sunday"
+          close: "Closed"
+
+    skills:
+        title: "Competences & fields of intervention"
+
+  de:
+    home:  "Startseite"
+    more: "Erfahren Sie mehr"
+    contact_us: "Kontakt"
+    contact:
+        title: "Kontakt"
+        name: "Vorname und Nachname"
+        email: "E-Mail"
+        tel: "Telefon (Option)"
+        message: "Nachricht"
+        holder_message: "Ihre Nachricht"
+        consent: "Ich bin damit einverstanden, dass meine Kontaktdaten als Teil meiner Bewerbung weitergeleitet werden."
+        send: "Senden Sie"
+        hours:
+          title: "Zeitplan"
+          lundi: "Montag"
+          mardi: "Dienstag"
+          mercredi: "Mittwoch"
+          jeudi: "Donnerstag"
+          vendredi: "Freitag"
+          samedi: "Samstag"
+          dimanche: "Sonntag"
+          close: "Geschlossen"
+
+    skills:
+        title: "Kompetenzen & Interventionsbereiche"
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

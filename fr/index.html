@@ -1,0 +1,68 @@
+---
+layout: default
+title: Marie Kochersperger | Avocat à Colmar, Alsace
+my_number: 5
+permalink: /
+lang: fr
+---
+<div class="size-default marie">
+  <p class="accroche">Marie Kochersperger, <strong>avocat à Colmar</strong>, dans les domaines du Droit du travail et social; dans les procédures civiles, dans le Droit pénal général et dans le Droit de la famille, des personnes et de leur patrimoine.</p>
+  <img src="{{site.url}}/assets/images/M-black-min.png" class="back" alt="M majuscule du logo" />
+  <div>
+    <img src="{{site.url}}/assets/images/marie.jpg"/>
+    <div class="logo-marie">
+      <img src="{{site.url}}/assets/images/logo-MK-white-min.png" height="100" class="" alt="logo marie Kochersperger avocate à colmar" />
+      <h2>Avocate à Colmar</h2>
+    </div>
+  </div>
+</div>
+<section class="size-default colmar">
+  <img src="{{site.url}}/assets/images/K-black-min.png" class="back" alt="lettre du logo" />
+  <div>
+    <img src="https://www.visit.alsace/wp-content/uploads/lei/pictures/235008823-cour-dappel-1-1600x900.jpg" alt="palais de justice de colmar">
+  </div>
+  <div class="accroche second">
+    <p class="">Vous avez un problème juridique ?<br> Parlons en !!
+    </p>
+    {% include button.html %}
+  </div>
+</section>
+{% include skills.html %}
+<section id="actus">
+  <div class="size-default">
+      <h2>Les dernières actualités du Blog</h2>
+      <ul class="articles">
+        {% assign post = site.posts %}
+        <a href="{{ site.posts[0].url }}" class="card">
+          <li>
+            <h3>{{ post[0].title }}</h3>
+            <p>{{ post[0].preview  | truncate: 100 }}</p>
+            <img src="{{site.url}}/assets/images/card1.jpg" alt="symbole de la justice">
+          </li>
+        </a>
+        <a href="{{ site.posts[1].url }}" class="card active">
+          <li>
+            <h3>{{ post[1].title }}</h3>
+            <p>{{ post[1].preview  | truncate: 100 }}</p>
+            <img src="{{site.url}}/assets/images/card2.jpg" alt="marteau de juge">
+          </li>
+        </a>
+        <a href="{{ site.posts[2].url }}" class="card">
+          <li>
+            <h3>{{ post[2].title }}</h3>
+            <p>{{ post[2].preview  | truncate: 100 }}</p>
+            <img src="{{site.url}}/assets/images/card3.jpg" alt="symboles de la justice">
+          </li>
+        </a>
+      </ul>
+      <a href="{{ site.url}}/blog" class="btn black">Voir les autres articles</a>
+  </div>
+</section>
+<div>
+  <img width="" src="https://api.mapbox.com/styles/v1/mapbox/outdoors-v11/static/pin-l-suitcase+e76571(7.3542266,48.0737333)/7.3542266,48.0737333,14,0,60/600x300@2x?access_token=pk.eyJ1IjoidGhvbWFzLTY3IiwiYSI6ImNrN3hwZXpmMzBiZHozbm9za2ViMzIyMjgifQ.V_IVmR22KK45nQKxA7h61w" alt="Mapbox Map of 7.3542266,48.0737333" class="mapxbox">
+  <p class="map-links">
+  © <a href='https://www.mapbox.com/map-feedback/'>Mapbox</a> © <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap contributors</a>
+  </p>
+</div>
+{%  include contact.html %}
+<script src="{{ base.url | prepend: site.url }}/assets/js/card.js"></script>

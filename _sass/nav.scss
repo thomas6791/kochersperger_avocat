@@ -11,6 +11,10 @@
       align-items: center;
       justify-content: center;
     }
+    div {
+      display: flex;
+      span { color: white; padding: 0px 5px; }
+    }
   }
   .logo {
     display: flex;

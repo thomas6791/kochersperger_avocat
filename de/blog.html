@@ -1,0 +1,15 @@
+---
+layout: default
+title: DE Blog| Marie Kochersperger | Avocat à Colmar
+permalink: /blog
+lang: de
+---
+<h1>Blog DE | Les dernières actualités juridiques |Crown</h1>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>

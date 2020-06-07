@@ -1,42 +1,42 @@
 <section id="contact" class="size-default">
-  <h2>Contact</h2>
+  <h2>{{ site.t.[site.active_lang].contact.title }}</h2>
   <div class="flex">
     <div id="coordinates" class="shadow">
       <h3>Marie Kochersperger Avocate</h3>
       <p>2 Boulevard du Général Leclerc <br>68000 COLMAR</p>
       <a href="tel:+33389206280">03 89 20 62 80</a>
       <a href="https://www.linkedin.com/in/marie-kochersperger-161905a2/?originalSubdomain=fr" target="_blank"><img src="{{site.url}}/assets/images/linkedin-icon.png" class="social" /></a>
-      <h3 class="horaires">Horaires</h3>
+      <h3 class="horaires">{{ site.t.[site.active_lang].contact.hours.title }}</h3>
       <ul>
-        <li>Lundi: <time datetime="8:00">8:00</time>-<time datetime="12:00">12:00</time> | <time datetime="14:00">14:00</time>-<time datetime="18:00">18:00</time></li>
-        <li>Mardi: <time datetime="8:00">8:00</time>-<time datetime="12:00">12:00</time> | <time datetime="14:00">14:00</time>-<time datetime="18:00">18:00</time></li>
-        <li>Mercredi: <time datetime="8:00">8:00</time>-<time datetime="12:00">12:00</time> | <time datetime="14:00">14:00</time>-<time datetime="17:30">17:30</time></li>
-        <li>Jeudi: <time datetime="8:00">8:00</time>-<time datetime="12:00">12:00</time> | <time datetime="14:00">14:00</time>-<time datetime="18:00">18:00</time></li>
-        <li>Vendredi: <time datetime="8:00">8:00</time>-<time datetime="12:00">12:00</time> | <time datetime="14:00">14:00</time>-<time datetime="17:00">17:00</time></li>
-        <li>Samedi: Fermé</li>
-        <li>Dimanche: Fermé</li>
+        <li>{{ site.t.[site.active_lang].contact.hours.lundi }}: <time datetime="8:00">8:00</time>-<time datetime="12:00">12:00</time> | <time datetime="14:00">14:00</time>-<time datetime="18:00">18:00</time></li>
+        <li>{{ site.t.[site.active_lang].contact.hours.mardi }}: <time datetime="8:00">8:00</time>-<time datetime="12:00">12:00</time> | <time datetime="14:00">14:00</time>-<time datetime="18:00">18:00</time></li>
+        <li>{{ site.t.[site.active_lang].contact.hours.mercredi }}: <time datetime="8:00">8:00</time>-<time datetime="12:00">12:00</time> | <time datetime="14:00">14:00</time>-<time datetime="17:30">17:30</time></li>
+        <li>{{ site.t.[site.active_lang].contact.hours.jeudi }}: <time datetime="8:00">8:00</time>-<time datetime="12:00">12:00</time> | <time datetime="14:00">14:00</time>-<time datetime="18:00">18:00</time></li>
+        <li>{{ site.t.[site.active_lang].contact.hours.vendredi }}: <time datetime="8:00">8:00</time>-<time datetime="12:00">12:00</time> | <time datetime="14:00">14:00</time>-<time datetime="17:00">17:00</time></li>
+        <li>{{ site.t.[site.active_lang].contact.hours.samedi }}: {{ site.t.[site.active_lang].contact.hours.close }}</li>
+        <li>{{ site.t.[site.active_lang].contact.hours.dimanche }}: {{ site.t.[site.active_lang].contact.hours.close }}</li>
       </ul>
     </div>
     <form name="contact" method="POST" data-netlify="true">
       <p>
-        <label>Nom & Prénom*: <input type="text" name="name" required="required" /></label>
+        <label>{{ site.t.[site.active_lang].contact.name }}*: <input type="text" name="name" required="required" /></label>
       </p>
       <p>
-        <label>Email*: <input type="email" name="email" required="required" /></label>
+        <label>{{ site.t.[site.active_lang].contact.email }}*: <input type="email" name="email" required="required" /></label>
       </p>
       <p>
-        <label>Telephone (option): <input type="tel" name="telephone" /></label>
+        <label>{{ site.t.[site.active_lang].contact.tel }}: <input type="tel" name="telephone" /></label>
       </p>
       <p>
-        <label>Message*: <textarea name="message" rows="6" placeholder="votre message" required="required"></textarea></label>
+        <label>{{ site.t.[site.active_lang].contact.message }}*: <textarea name="message" rows="6" placeholder="{{ site.t.[site.active_lang].contact.holder_message }}" required="required"></textarea></label>
       </p>
       <p class="rgpd">
-        <label>J'accepte que mes coordonnées soient transmises dans le cadre de ma demande</label>
+        <label>{{ site.t.[site.active_lang].contact.consent }}</label>
         <input type="checkbox" required name="terms">
       </p>
       <div data-netlify-recaptcha="true"></div>
 
-      <button type="submit" class="btn">Envoyer</button>
+      <button type="submit" class="btn">{{ site.t.[site.active_lang].contact.send }}</button>
 
     </form>
   </div>

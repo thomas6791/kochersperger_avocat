@@ -1,13 +1,41 @@
 <nav id="nav">
-  <ul>
+{% case site.active_lang %}
+  {% when "fr" %}
+    {% assign items = site.data.nav | shift %}
+    <ul>
     {% if page.url == "/" %}
-      <li><h1><a href="{{site.url}}"><img src="{{site.url}}/assets/images/logo-MK-white-min.png" class="logo" alt="Marie Kochersperger | Avocat à Colmar, Alsace, avocate"></a></h1></li>
+      <li><h1><a href="{{site.data.nav[0].link}}"><img src="{{site.url}}/assets/images/logo-MK-white-min.png" class="logo" alt="{{ site.data.nav[0].name }}"></a></h1></li>
     {% else %}
-    <li><a href="{{site.url}}"><img src="{{site.url}}/assets/images/logo-MK-white-min.png" class="logo" alt="logo marie kochersperger avocat colmar"></a></li>
+      <li><a href="{{site.data.nav[0].link}}"><img src="{{site.url}}/assets/images/logo-MK-white-min.png" class="logo" alt="logo marie kochersperger avocat colmar"></a></li>
     {% endif %}
-    <li><a href="{{site.url}}/about.html">Compétences</a></li>
-    <li><a href="#">Honoraires</a></li>
-    <li><a href="#contact">Contact | 03 89 20 62 80</a></li>
-  </ul>
-</nav>
 
+    {% for item in items %}
+      <li><a href="{{ item.link }}">{{ item.name }}</a></li>
+    {% endfor %}
+    <div>
+      <li><a href="{{ site.url }}/de">DE</a></li><span>|</span>
+      <li><a href="{{ site.url }}">FR</a></li>
+    </div>
+    <li><a href="#contact">Contact | 03 89 20 62 80</a></li>
+    </ul>
+  {% when "de" %}
+    {% assign items = site.data.nav | shift %}
+    <ul>
+    {% if page.url == "/" %}
+      <li><h1><a href="{{ site.data.nav[0].link }}"><img src="{{site.url}}/assets/images/logo-MK-white-min.png" class="logo" alt="{{ site.data.nav[0].name }}"></a></h1></li>
+    {% else %}
+      <li><a href="{{ site.data.nav[0].link }}"><img src="{{site.url}}/assets/images/logo-MK-white-min.png" class="logo" alt="logo marie kochersperger avocat colmar"></a></li>
+    {% endif %}
+
+    {% for item in items %}
+      <li><a href="{{ item.link }}">{{ item.name }}</a></li>
+    {% endfor %}
+    <div>
+      <li><a href="{{ site.url }}/de">DE</a></li><span>|</span>
+      <li><a href="{{ site.url }}">FR</a></li>
+    </div>
+    <li><a href="#contact">Contact | +33 3 89 20 62 80</a></li>
+    </ul>
+  {% else %}
+{% endcase %}
+</nav>
