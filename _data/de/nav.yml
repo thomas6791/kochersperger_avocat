@@ -1,8 +1,8 @@
 - name: Home
   link: /de
 - name: BlogDE
-  link: blog.html
+  link: /de/blog.html
 - name: compétences
-  link: skills.html
+  link: /de/skills.html
 - name: aboutDE
-  link: about.html
+  link: /de/about.html
