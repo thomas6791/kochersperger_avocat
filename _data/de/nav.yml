@@ -1,0 +1,8 @@
+- name: Home
+  link: /de
+- name: BlogDE
+  link: blog.html
+- name: compétences
+  link: skills.html
+- name: aboutDE
+  link: about.html

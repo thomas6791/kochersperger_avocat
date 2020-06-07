@@ -6,8 +6,4 @@ fr:
     link: /about.html
   - name: Blog
     link: /blog.html
-de:
-  - name: Home
-    link: /
-  - name: BlogDE
-    link: /blog.html
+
