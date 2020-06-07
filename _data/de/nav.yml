@@ -1,8 +1,8 @@
-- name: Home
+- name: Marie Kochersperger | Rechtsanwältin in Colmar, Elsass, Rechtsanwältin
   link: /de
-- name: BlogDE
+- name: Blog
   link: /de/blog.html
-- name: compétences
+- name: Kompetenzen
   link: /de/skills.html
 - name: aboutDE
   link: /de/about.html

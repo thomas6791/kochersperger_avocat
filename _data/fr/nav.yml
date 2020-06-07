@@ -1,10 +1,8 @@
 - name: Marie Kochersperger | Avocat à Colmar, Alsace, avocate
   link: /
-- name: BlogFR
-  link: /blog.html
-- name: compétences
+- name: Compétences
   link: /skills.html
-- name: aboutFR
+- name: A Propos
   link: /about.html
-- name: TestFr
-  link: /test.html
+- name: Blog
+  link: /blog.html
