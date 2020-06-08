@@ -5,14 +5,42 @@
   </div>
 </div>
 
+
 <div class="icon icon-apple"></div>
   <ul class="menu">
-    <li class="menu-item"><a href="{{site.url}}"><img src="{{site.url}}/assets/images/logo-MK-white-min.png" class="logo" width="40" height="" alt="Marie Kochersperger | Avocat à Colmar, Alsace, avocate">   Accueil</a></li>
-    <li class="menu-item"><a href="{{site.url}}/about.html">Compétences</a></li>
-    <li class="menu-item"><a href="{{site.url}}/about.html">Honoraires</a></li>
-    <li class="menu-item"><a href="{{site.url}}/about.html">Contact</a></li>
-    <li class="menu-item"><a href="{{ site.url }}/de">DE</a></li>
-    <li class="menu-item"><a href="{{ site.url }}">FR</a></li>
+    {% case site.active_lang %}
+      {% when "fr" %}
+        {% assign items = site.data.nav | shift %}
+
+          {% if page.url == "/" %}
+            <li class="menu-item"><a href="{{site.data.nav[0].link}}"><img src="{{site.url}}/assets/images/logo-MK-white-min.png" class="logo" width="40" height="" alt="{{ site.data.nav[0].name }}"> Accueil</a></li>
+          {% else %}
+            <li class="menu-item"><a href="{{site.data.nav[0].link}}"><img src="{{site.url}}/assets/images/logo-MK-white-min.png" class="logo" width="40" height="" alt="logo marie kochersperger avocat colmar"> Accueil</a></li>
+          {% endif %}
+
+          {% for item in items %}
+            <li class="menu-item"><a href="{{ item.link }}">{{ item.name }}</a></li>
+          {% endfor %}
+          <li class="menu-item"><a href="{{ site.url }}/de">DE</a></li>
+          <li class="menu-item"><a href="{{ site.url }}">FR</a></li>
+
+      {% when "de" %}
+        {% assign items = site.data.nav | shift %}
+
+          {% if page.url == "/" %}
+            <li class="menu-item"><a href="{{site.data.nav[0].link}}"><img src="{{site.url}}/assets/images/logo-MK-white-min.png" class="logo" width="40" height="" alt="{{ site.data.nav[0].name }}"> Startseite</a></li>
+          {% else %}
+            <li class="menu-item"><a href="{{site.data.nav[0].link}}"><img src="{{site.url}}/assets/images/logo-MK-white-min.png" class="logo" width="40" height="" alt="logo marie kochersperger avocat colmar"> Startseite</a></li>
+          {% endif %}
+
+          {% for item in items %}
+            <li class="menu-item"><a href="{{ item.link }}">{{ item.name }}</a></li>
+          {% endfor %}
+          <li class="menu-item"><a href="{{ site.url }}/de">DE</a>
+          <li class="menu-item"><a href="{{ site.url }}">FR</a></li>
+          {% else %}
+
+    {% endcase %}
   </ul>
   <div class="shop icon icon-bag"></div>
 </div>
