@@ -45,6 +45,11 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
+share-links-active:
+  twitter: ""
+  facebook: ""
+  linkedin: "https://www.linkedin.com/in/marie-kochersperger-161905a2/?originalSubdomain=fr"
+
 t:
   fr:
     home:  "Accueil"
