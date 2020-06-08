@@ -10,7 +10,12 @@
     {% endif %}
 
     {% for item in items %}
-      <li><a href="{{ item.link }}">{{ item.name }}</a></li>
+      {% if item.name == "Compétences" %}
+        <li><a href="">{{ item.name }}</a>
+        </li>
+      {% else %}
+        <li><a href="{{ item.link }}">{{ item.name }}</a></li>
+      {% endif %}
     {% endfor %}
     <div>
       <li><a href="{{ site.url }}/de">DE</a></li><span>|</span>
