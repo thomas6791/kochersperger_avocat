@@ -11,7 +11,14 @@
 
     {% for item in items %}
       {% if item.name == "Compétences" %}
-        <li><a href="">{{ item.name }}</a>
+        <li class="sub"><a href="">{{ item.name }}
+          <ol>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+          </ol>
+        </a>
         </li>
       {% else %}
         <li><a href="{{ item.link }}">{{ item.name }}</a></li>

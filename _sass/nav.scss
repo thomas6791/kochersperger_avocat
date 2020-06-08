@@ -5,15 +5,16 @@
     color: white; font-size: 1em;
   }
   ul { display: flex; max-width:1024px; margin: auto; justify-content: space-between; padding: 0px;
-    list-style: none; line-height: 3em;
+    list-style: none; line-height: 1em;
     li {
       display: flex;
       align-items: center;
       justify-content: center;
+      a { line-height: 3em; }
     }
     div {
       display: flex;
-      span { color: white; padding: 0px 5px; }
+      span { color: white; padding: 0px 5px; line-height: 3em; }
     }
   }
   .logo {
@@ -25,6 +26,20 @@
     img {
       //height: auto;
       //width: 50px;
+    }
+  }
+  .sub {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    a { display: block; }
+    ol {
+      padding: 0px;
+      height: 0px;
+      visibility: hidden;
+      li {
+        &:hover { background-color: white; color: $black; }
+      }
     }
   }
 }
