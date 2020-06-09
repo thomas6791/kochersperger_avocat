@@ -27,11 +27,13 @@
     {% endfor %}
     <div>
       {% if site.active_lang == "fr" %}
-        <li><a href="{{ site.url }}/de">DE</a></li><span>|</span>
         <li><a href="{{ site.url }}" class="lang-active">FR</a></li>
+        <span>|</span>
+        <li><a href="{{ site.url }}/de">DE</a></li>
       {% elsif site.active_lang == "de" %}
-        <li><a href="{{ site.url }}/de" class="lang-active">DE</a></li><span>|</span>
         <li><a href="{{ site.url }}" class="">FR</a></li>
+        <span>|</span>
+        <li><a href="{{ site.url }}/de" class="lang-active">DE</a></li>
       {% else %}
       {% endif %}
     </div>
@@ -64,11 +66,13 @@
     {% endfor %}
     <div>
       {% if site.active_lang == "fr" %}
-        <li><a href="{{ site.url }}/de">DE</a></li><span>|</span>
         <li><a href="{{ site.url }}" class="lang-active">FR</a></li>
+        <span>|</span>
+        <li><a href="{{ site.url }}/de">DE</a></li>
       {% elsif site.active_lang == "de" %}
-        <li><a href="{{ site.url }}/de" class="lang-active">DE</a></li><span>|</span>
         <li><a href="{{ site.url }}" class="">FR</a></li>
+        <span>|</span>
+        <li><a href="{{ site.url }}/de" class="lang-active">DE</a></li>
       {% else %}
       {% endif %}
     </div>
