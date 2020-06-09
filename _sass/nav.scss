@@ -32,14 +32,23 @@
     position: relative;
     margin: 0px;
     padding: 0px;
-    a { display: block; }
-    ol {
-      padding: 0px;
-      height: 0px;
-      visibility: hidden;
-      li {
-        &:hover { background-color: white; color: $black; }
+    a { display: block;
+      ol {
+        visibility: hidden;
+        padding: 0px;
+        //height: 0px;
+        height: auto;
+        position: absolute;
+        //top: 0;
+        width: 100%;
+        z-index: 40;
+        background-color: $black;
+        //visibility: hidden;
+        li {}
       }
+    }
+    & > a:hover {
+      ol { visibility: visible; }
     }
   }
 }
