@@ -10,11 +10,22 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      a { line-height: 3em; }
+      flex: auto;
+      a {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        //line-height: 3em;
+        //padding: 0px 40px !important;
+      }
     }
     div {
       display: flex;
+      margin: 0px 2em;
       span { color: white; padding: 0px 5px; line-height: 3em; }
+    }
+    li:first-of-type, li:last-of-type {
+      flex: inherit;
     }
   }
   .logo {
@@ -32,26 +43,35 @@
     position: relative;
     margin: 0px;
     padding: 0px;
-    a { display: block;
-      ol {
-        visibility: hidden;
-        padding: 0px;
-        //height: 0px;
-        height: auto;
-        position: absolute;
-        //top: 0;
-        width: 100%;
-        z-index: 40;
-        background-color: $black;
-        //visibility: hidden;
-        li {}
+    a {
+      &:hover { opacity: 1; }
+    }
+    ol {
+      width: 100%;
+      z-index: 40;
+      background-color: $black;
+      visibility: hidden;
+      position: absolute;
+      top: 3em;
+      padding: 0;
+      li {
+        a { width: 100%; display: flex;
+            justify-content: center;
+            align-items: center; text-align: center; line-height: inherit;
+            padding-top: 1em;
+            padding-bottom: 1em;
+          &:hover { opacity: 1; }
+        }
       }
     }
-    & > a:hover {
-      ol { visibility: visible; }
+  }
+  .sub:hover, .sub > a:hover {
+    ol { visibility: visible;
+      li:hover { opacity: 0.8; }
     }
   }
 }
+.lang-active { font-weight: bolder; }
 #nav { visibility: visible; }
 .header { visibility: hidden; height: 0; }
 
