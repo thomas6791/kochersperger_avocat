@@ -24,7 +24,7 @@
 
 @media only screen and (max-width: 40em) {
   main { padding-top: 50px; }
-  #nav { visibility: hidden; height: 0; }
+  #nav { visibility: hidden; height: 0; display: none; }
   .header { visibility: visible; }
   .size-default {}
   .grid-skills {
