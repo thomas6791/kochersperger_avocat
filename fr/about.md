@@ -2,6 +2,9 @@
 layout: default
 title: About
 permalink: /about
+lang: fr
+alternate_lang_1: de
+alternate_1: /de/about.html
 ---
 # About page
 
