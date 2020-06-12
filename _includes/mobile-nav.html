@@ -22,7 +22,7 @@
             <li class="menu-item"><a href="{{ item.link }}">{{ item.name }}</a></li>
           {% endfor %}
           <li class="menu-item"><a href="{{ site.url }}/de">DE</a></li>
-          <li class="menu-item"><a href="{{ site.url }}">FR</a></li>
+          <li class="menu-item"><a href="{{ site.url }}/fr">FR</a></li>
 
       {% when "de" %}
         {% assign items = site.data.nav | shift %}
@@ -37,7 +37,7 @@
             <li class="menu-item"><a href="{{ item.link }}">{{ item.name }}</a></li>
           {% endfor %}
           <li class="menu-item"><a href="{{ site.url }}/de">DE</a>
-          <li class="menu-item"><a href="{{ site.url }}">FR</a></li>
+          <li class="menu-item"><a href="{{ site.url }}/fr">FR</a></li>
           {% else %}
 
     {% endcase %}
