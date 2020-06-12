@@ -17,4 +17,4 @@ collections:
       - {label: "Preview", name: "preview", widget: "string"}
       - {label: "Texte", name: "body", widget: "markdown"}
       - {label: "layout", name: "layout", widget: "hidden", default: "post"}
-      - {label: "Langue", name: "lang", widget: "select" options: ["fr", "de"] }
+      - {label: "Langue", name: "lang", widget: "select", options: ["fr", "de"] }
