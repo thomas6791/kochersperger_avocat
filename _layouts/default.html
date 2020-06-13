@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="{{ page.lang }}">
   <head>
     <meta charset="utf-8">
     <meta name="robots" content="noindex">
@@ -11,6 +11,17 @@
     <!-- For documents/pages whose URLs can change... -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Poiret+One&display=swap" rel="stylesheet">
+
+    {% if site.active_lang == "fr" %}
+      <link rel="alternate" hreflang="{{ page.lang }}" href="{{ site.url}}{{ page.permalink }}" />
+      <link rel="alternate" hreflang="{{ page.alternate_lang_1 }}" href="{{ site.url }}{{ page.alternate_1 }}" />
+    {% elsif site.active_lang == "de" %}
+      <link rel="alternate" hreflang="de" href="{{ site.url }}/de{{ page.permalink }}" />
+      <link rel="alternate" hreflang="fr" href="{{ site.url }}{{ page.alternate_1 }}" />
+    {% endif %}
+
+    <link rel="alternate" hreflang="x-default" href="{{ site.url}}{{ page.permalink }}" />
+
     {% seo %}
   </head>
   <body class="window">
