@@ -4,7 +4,7 @@ title: About
 permalink: /about
 lang: de
 alternate_lang_1: fr
-alternate_1: /about.html
+alternate_1: /fr/about
 ---
 # About page
 
