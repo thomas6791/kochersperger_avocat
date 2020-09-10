@@ -1,5 +1,5 @@
 .banner {
-  background-image: url("https://www.visit.alsace/wp-content/uploads/2019/01/thio-petite-venise-colmar-istock-sergey-dzyuba-1600x900.jpg");
+  background-image: url("{{ site.baseurl }}/assets/images/header-mk.jpg");
   background-position-y: center;
   //position: relative;
   height: 300px;
