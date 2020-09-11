@@ -53,6 +53,7 @@ share-links-active:
 t:
   fr:
     home:  "Accueil"
+    banner: "Avocate au barreau de Colmar"
     menu:
         skills: "Compétences"
     more: "En savoir plus"
@@ -82,6 +83,7 @@ t:
 
   en:
     home:  "Home"
+    banner: "Lawyer at the Colmar Bar"
     more: "Read More"
     contact_us: "Contact me"
     contact:
@@ -109,6 +111,7 @@ t:
 
   de:
     home:  "Startseite"
+    banner: "Rechtsanwalt bei der Anwaltskammer von Colmar"
     more: "Erfahren Sie mehr"
     contact_us: "Kontakt"
     contact:
