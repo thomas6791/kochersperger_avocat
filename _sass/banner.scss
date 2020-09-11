@@ -1,0 +1,26 @@
+.banner {
+  background-image: url("../images/header-mk.jpg");
+  background-position-y: center;
+  //position: relative;
+  height: 80vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  .banner-content {
+    p { font-size: 2em; }
+    span { font-size: 1.2em; font-weight: 500; }
+    font-family: "Avenir";
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  }
+  .logo-banner {
+    width: 12em;
+    height: auto;
+  }
+  margin-bottom: 2em;
+  button {
+    float: none;
+  }
+}
