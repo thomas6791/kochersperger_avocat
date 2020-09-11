@@ -1,8 +1,5 @@
 #nav {
   background-color: $black;
-  //position: fixed;
-  //width: 100%;
-  //z-index: 20;
   a {
     text-decoration: none; color: black; line-height: 2em;
     color: white; font-size: 1em;
@@ -79,6 +76,11 @@
 }
 .lang-active { font-weight: bolder; }
 #nav { visibility: visible; }
+.fixed {
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+}
 .header { visibility: hidden; height: 0; }
 
 .window .header {
