@@ -41,9 +41,9 @@
     column-gap: 1em;
     row-gap: 1em;
     li {
-      min-height: 40vh;
+      min-height: 60vh;
       padding: 1em;
-      h2 { text-align: center; }
+      h2 { text-align: center; font-weight: 500; text-decoration: underline; }
     }
   }
 }
