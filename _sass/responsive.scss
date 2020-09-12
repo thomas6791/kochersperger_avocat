@@ -34,7 +34,9 @@
       //max-width: 100%;
     }
   }
-  .banner {}
+  .banner {
+    background-position: center;
+  }
   .banner-content { padding: 15px; font-size: 0.8em; }
   .marie {
     display: flex; flex-direction: column-reverse;
