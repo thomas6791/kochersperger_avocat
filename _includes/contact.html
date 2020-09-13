@@ -1,18 +1,18 @@
-<section id="contact" class="size-default">
+<section id="contact" class="size-default" itemscope itemtype="https://schema.org/LegalService">
   <h2>{{ site.t.[site.active_lang].contact.title }}</h2>
   <div class="flex">
     <div id="coordinates" class="shadow">
-      <h3>Marie Kochersperger Avocate</h3>
+      <h3 itemprop="name">Marie Kochersperger Avocate</h3>
       <p>2 Boulevard du Général Leclerc <br>68000 COLMAR</p>
       <a href="tel:+33389206280">03 89 20 62 80</a>
       <a href="https://www.linkedin.com/in/marie-kochersperger-161905a2/?originalSubdomain=fr" target="_blank"><img src="{{site.url}}/assets/images/linkedin-icon.png" class="social" /></a>
       <h3 class="horaires">{{ site.t.[site.active_lang].contact.hours.title }}</h3>
       <ul>
-        <li>{{ site.t.[site.active_lang].contact.hours.lundi }}: <time datetime="8:00">8:00</time>-<time datetime="12:00">12:00</time> | <time datetime="14:00">14:00</time>-<time datetime="18:00">18:00</time></li>
-        <li>{{ site.t.[site.active_lang].contact.hours.mardi }}: <time datetime="8:00">8:00</time>-<time datetime="12:00">12:00</time> | <time datetime="14:00">14:00</time>-<time datetime="18:00">18:00</time></li>
-        <li>{{ site.t.[site.active_lang].contact.hours.mercredi }}: <time datetime="8:00">8:00</time>-<time datetime="12:00">12:00</time> | <time datetime="14:00">14:00</time>-<time datetime="17:30">17:30</time></li>
-        <li>{{ site.t.[site.active_lang].contact.hours.jeudi }}: <time datetime="8:00">8:00</time>-<time datetime="12:00">12:00</time> | <time datetime="14:00">14:00</time>-<time datetime="18:00">18:00</time></li>
-        <li>{{ site.t.[site.active_lang].contact.hours.vendredi }}: <time datetime="8:00">8:00</time>-<time datetime="12:00">12:00</time> | <time datetime="14:00">14:00</time>-<time datetime="17:00">17:00</time></li>
+        <li itemprop="openingHours" content="Mo 08:00-12:00" content="Mo 14:00-18:00">{{ site.t.[site.active_lang].contact.hours.lundi }}: <time datetime="8:00">8:00</time>-<time datetime="12:00">12:00</time> | <time datetime="14:00">14:00</time>-<time datetime="18:00">18:00</time></li>
+        <li itemprop="openingHours" content="Tu 08:00-12:00" content="Tu 14:00-18:00">{{ site.t.[site.active_lang].contact.hours.mardi }}: <time datetime="8:00">8:00</time>-<time datetime="12:00">12:00</time> | <time datetime="14:00">14:00</time>-<time datetime="18:00">18:00</time></li>
+        <li itemprop="openingHours" content="We 08:00-12:00" content="We 14:00-17:30">{{ site.t.[site.active_lang].contact.hours.mercredi }}: <time datetime="8:00">8:00</time>-<time datetime="12:00">12:00</time> | <time datetime="14:00">14:00</time>-<time datetime="17:30">17:30</time></li>
+        <li itemprop="openingHours" content=Tho 08:00-12:00" content="Th 14:00-18:00">{{ site.t.[site.active_lang].contact.hours.jeudi }}: <time datetime="8:00">8:00</time>-<time datetime="12:00">12:00</time> | <time datetime="14:00">14:00</time>-<time datetime="18:00">18:00</time></li>
+        <li itemprop="openingHours" content="Fr 08:00-12:00" content="Fi 14:00-17:00">{{ site.t.[site.active_lang].contact.hours.vendredi }}: <time datetime="8:00">8:00</time>-<time datetime="12:00">12:00</time> | <time datetime="14:00">14:00</time>-<time datetime="17:00">17:00</time></li>
         <li>{{ site.t.[site.active_lang].contact.hours.samedi }}: {{ site.t.[site.active_lang].contact.hours.close }}</li>
         <li>{{ site.t.[site.active_lang].contact.hours.dimanche }}: {{ site.t.[site.active_lang].contact.hours.close }}</li>
       </ul>
@@ -25,7 +25,7 @@
         <label>{{ site.t.[site.active_lang].contact.email }}*: <input type="email" name="email" required="required" /></label>
       </p>
       <p>
-        <label>{{ site.t.[site.active_lang].contact.tel }}: <input type="tel" name="telephone" /></label>
+        <label itemprop="telephone" content="+3389206280">{{ site.t.[site.active_lang].contact.tel }}: <input type="tel" name="telephone" /></label>
       </p>
       <p>
         <label>{{ site.t.[site.active_lang].contact.message }}*: <textarea name="message" rows="6" placeholder="{{ site.t.[site.active_lang].contact.holder_message }}" required="required"></textarea></label>
