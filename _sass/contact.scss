@@ -23,7 +23,7 @@
       box-sizing: border-box;
     }
     label { font-weight: bold; }
-    input, textarea { margin-bottom: 10px; }
+    input, textarea { margin-bottom: 10px; border: solid 1px lightgrey; }
     p { margin: 0px; }
   }
   .flex { display: flex; }
