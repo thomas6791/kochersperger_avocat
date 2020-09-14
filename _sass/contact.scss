@@ -79,16 +79,20 @@
     padding: 3em;
     form {
       padding: 0px;
-      div { display: flex; justify-content: space-between; }
+      div { display: flex; justify-content: space-between;
+        p { width: 100%; }
+      }
       p {
         font-size: 0.8em;
-        padding: 5px;
+        padding: 20px;
         -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
         -moz-box-sizing: border-box;    /* Firefox, other Gecko */
         box-sizing: border-box;
       }
       label { font-weight: lighter; }
-      input { border: none; border-bottom: solid 1px lightgrey;
+      input { border: none; border-bottom: solid 1px lightgrey; line-height: 2em;
+        &:focus{outline: none;
+        }
       }
     }
     img {
