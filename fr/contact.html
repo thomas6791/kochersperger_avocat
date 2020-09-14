@@ -34,6 +34,15 @@ alternate_1: /de/contact
         <label>{{ site.t[site.active_lang].contact.subject }}*: <input type="text" name="subject" required="required" /></label>
       </p>
       <p>
+        <label>Ma demande concerne:
+          <select name="sujet">
+            <option value="leader">Divorce</option>
+            <option value="follower">Pru d'hommes</option>
+            <option value="follower">Aide juridique</option>
+          </select>
+        </label>
+      </p>
+      <p>
         <label>{{ site.t[site.active_lang].contact.message }}*: <textarea name="message" rows="6" placeholder="{{ site.t[site.active_lang].contact.holder_message }}" required="required"></textarea></label>
       </p>
       <p class="rgpd">
