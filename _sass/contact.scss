@@ -52,3 +52,31 @@
   }
 }
 .social { width: 2.5em; display: block; margin: 0.5em 0px; }
+
+#contact-page {
+  display: flex;
+  height: auto;
+  width: 100%;
+  section { height: auto; width: 100%; box-sizing: border-box; }
+  section:first-of-type {
+    background-image: url("https://as1.ftcdn.net/jpg/03/13/82/98/500_F_313829814_WGIuCKUzF0usj5YMs7CY1I7dh4LIC3QY.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 80%;
+  }
+  section:last-of-type {
+    @extend #contact;
+    padding: 0px;
+    form {
+      padding: 0px;
+      width: 80%;
+    }
+    padding: 2em 4em;
+    padding-bottom: 4em;
+    img {
+      width: 7em;
+    }
+    h1 { margin: 1em 0;}
+  }
+}
