@@ -55,25 +55,29 @@
 
 #contact-page {
   display: flex;
-  height: auto;
+  height: 100%;
   width: 100%;
-  section { height: auto; width: 100%; box-sizing: border-box; }
+  section {
+    min-height: 100%;
+    width: 100%;
+    max-width: 100%;
+    //max-height: 100%;
+    //-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    //-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    //box-sizing: border-box;
+  }
   section:first-of-type {
     background-image: url("https://as1.ftcdn.net/jpg/03/13/82/98/500_F_313829814_WGIuCKUzF0usj5YMs7CY1I7dh4LIC3QY.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 80%;
+    //min-height: 100%;
+    //position: fixed;
   }
   section:last-of-type {
+    width: 100%;
     @extend #contact;
-    padding: 0px;
-    form {
-      padding: 0px;
-      width: 80%;
-    }
-    padding: 2em 4em;
-    padding-bottom: 4em;
+    form {}
     img {
       width: 7em;
     }

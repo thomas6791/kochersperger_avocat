@@ -28,6 +28,9 @@
         <label itemprop="telephone" content="+3389206280">{{ site.t.[site.active_lang].contact.tel }}: <input type="tel" name="telephone" /></label>
       </p>
       <p>
+        <label>{{ site.t.[site.active_lang].contact.subject }}*: <input type="text" name="subject" required="required" /></label>
+      </p>
+      <p>
         <label>{{ site.t.[site.active_lang].contact.message }}*: <textarea name="message" rows="6" placeholder="{{ site.t.[site.active_lang].contact.holder_message }}" required="required"></textarea></label>
       </p>
       <p class="rgpd">

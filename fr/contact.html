@@ -6,31 +6,41 @@ lang: fr
 alternate_lang_1: de
 alternate_1: /de/contact
 ---
+
 <div id="contact-page">
   <section></section>
   <section>
     <img src="{{site.url}}/assets/images/big-mk-min.png" class="logo-banner" itemprop="image">
     <h1>Me Contacter</h1>
     <form name="contact" method="POST" data-netlify="true">
+      <div>
+        <p>
+          <label>{{ site.t[site.active_lang].contact.name }}*: <input type="text" name="name" required="required" /></label>
+        </p>
+        <p>
+          <label>{{ site.t[site.active_lang].contact.society }}: <input type="email" name="email" /></label>
+        </p>
+      </div>
+
       <p>
-        <label>{{ site.t.[site.active_lang].contact.name }}*: <input type="text" name="name" required="required" /></label>
+        <label>{{ site.t[site.active_lang].contact.email }}*: <input type="email" name="email" required="required" /></label>
       </p>
       <p>
-        <label>{{ site.t.[site.active_lang].contact.email }}*: <input type="email" name="email" required="required" /></label>
+        <label itemprop="telephone" content="+3389206280">{{ site.t[site.active_lang].contact.tel }}: <input type="tel" name="telephone" /></label>
       </p>
       <p>
-        <label itemprop="telephone" content="+3389206280">{{ site.t.[site.active_lang].contact.tel }}: <input type="tel" name="telephone" /></label>
+        <label>{{ site.t[site.active_lang].contact.subject }}*: <input type="text" name="subject" required="required" /></label>
       </p>
       <p>
-        <label>{{ site.t.[site.active_lang].contact.message }}*: <textarea name="message" rows="6" placeholder="{{ site.t.[site.active_lang].contact.holder_message }}" required="required"></textarea></label>
+        <label>{{ site.t[site.active_lang].contact.message }}*: <textarea name="message" rows="6" placeholder="{{ site.t[site.active_lang].contact.holder_message }}" required="required"></textarea></label>
       </p>
       <p class="rgpd">
-        <label>{{ site.t.[site.active_lang].contact.consent }}</label>
+        <label>{{ site.t[site.active_lang].contact.consent }}</label>
         <input type="checkbox" required name="terms">
       </p>
       <div data-netlify-recaptcha="true"></div>
 
-      <button type="submit" class="btn">{{ site.t.[site.active_lang].contact.send }}</button>
+      <button type="submit" class="btn">{{ site.t[site.active_lang].contact.send }}</button>
 
     </form>
   </section>
