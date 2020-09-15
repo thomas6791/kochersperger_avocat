@@ -37,7 +37,7 @@
       {% else %}
       {% endif %}
     </div>
-    <li><a href="#contact" class="link-contact">Contact | 03 89 20 62 80</a></li>
+    <li><a href="#contact" class="link-contact">Contact | {{ site.t.[site.active_lang].contact.tel_number }}</a></li>
     </ul>
   {% when "de" %}
     {% assign items = site.data.nav | shift %}
@@ -76,7 +76,7 @@
       {% else %}
       {% endif %}
     </div>
-    <li><a href="#contact" class="link-contact">Kontakt | +33 3 89 20 62 80</a></li>
+    <li><a href="#contact" class="link-contact">Kontakt | {{ site.t.[site.active_lang].contact.tel_number }}</a></li>
     </ul>
   {% else %}
 {% endcase %}
