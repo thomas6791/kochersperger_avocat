@@ -6,3 +6,4 @@ layout: post
 lang: fr
 ---
 Voldemort Iron
+<div class="commentbox"></div>
