@@ -29,6 +29,9 @@ url: "https://mk-avocat.netlify.app" # the base hostname & protocol for your sit
 twitter_username: jekyllrb
 github_username:  jekyll
 
+commentbox:
+ id: 5659996670918656-proj
+
 # Build settings
 theme: minima
 

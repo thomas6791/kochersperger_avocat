@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="{{ page.lang }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+    <!-- For styles with static names... -->
+    <link href="{{ 'assets/css/styles.css' | relative_url }}" rel="stylesheet">
+
+    <!-- For documents/pages whose URLs can change... -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Poiret+One&display=swap" rel="stylesheet">
+
+    {% if site.active_lang == "fr" %}
+      <link rel="alternate" hreflang="{{ page.lang }}" href="{{ site.url}}{{ page.permalink }}" />
+      <link rel="alternate" hreflang="{{ page.alternate_lang_1 }}" href="{{ site.url }}{{ page.alternate_1 }}" />
+    {% elsif site.active_lang == "de" %}
+      <link rel="alternate" hreflang="de" href="{{ site.url }}/de{{ page.permalink }}" />
+      <link rel="alternate" hreflang="fr" href="{{ site.url }}{{ page.alternate_1 }}" />
+    {% endif %}
+
+    <link rel="alternate" hreflang="x-default" href="{{ site.url}}{{ page.permalink }}" />
+
+    {% seo %}
+  </head>
+  <body class="window" itemscope itemtype="https://schema.org/LegalService">
+    <header>
+      <div class="header">
+        {% include mobile-nav.html %}
+        {% include nav.html %}
+      </div>
+    </header>
+    <main>
+      <h1>TEST LAYOUT</h1>
+      <article>
+        {{ content }}
+      </article>
+
+        <div class="post-content e-content" itemprop="articleBody">
+          {{ content }}
+        </div>
+
+        {%- if site.commentbox.id -%}
+          {%- include commentbox.html -%}
+        {%- endif -%}"
+    </main>
+    {% include footer.html %}
+    {% include cookie-consent.html %}
+  </body>
+</html>
