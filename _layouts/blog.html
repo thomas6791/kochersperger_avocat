@@ -32,14 +32,20 @@
       </div>
     </header>
     <main>
+      <h1>TEST LAYOUT</h1>
       <article>
         {{ content }}
       </article>
+
+        <div class="post-content e-content" itemprop="articleBody">
+          {{ content }}
+        </div>
+
+        {%- if site.commentbox.id -%}
+          {%- include commentbox.html -%}
+        {%- endif -%}"
     </main>
     {% include footer.html %}
     {% include cookie-consent.html %}
   </body>
 </html>
-<script async src="{{ base.url | prepend: site.url }}/assets/js/cookie.js"></script>
-<script defer src="{{ base.url | prepend: site.url }}/assets/js/mobile.js"></script>
-<script defer src="{{ base.url | prepend: site.url }}/assets/js/fixed.js"></script>
